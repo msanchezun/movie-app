@@ -24,7 +24,7 @@ const Login = () => {
   try {
   const result = await loginService(correo, clave);
 
-  // Guarda token y email
+
   localStorage.setItem("token", result.data.token);
   localStorage.setItem("email", result.data.email);
   localStorage.setItem("role", result.data.role);
